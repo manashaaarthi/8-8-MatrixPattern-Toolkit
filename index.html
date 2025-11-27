@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Starts Here */
+        :root {
+            --green-light: #e8f5e9; /* Light, pale green for background */
+            --green-dark: #388e3c; /* Darker green for borders/text */
+            --font-handwriting: 'Dancing Script', cursive;
+            --font-body: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background-color: var(--green-light); /* Pale green background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- Layout Container --- */
+        .page-container {
+            width: 800px; /* Adjust size as needed, simulating an A4 page */
+            padding: 40px;
+            background-color: white; /* Inner "page" color */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex; /* Use flexbox for horizontal layout */
+            position: relative;
+            overflow: hidden; /* To contain the subtitle/image alignment */
+            height: 550px; /* Fixed height for page simulation */
+        }
+
+        /* --- Content Area (Titles and Image) --- */
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Align title/slogan to the right */
+            position: relative;
+            padding-right: 20px; /* Space from the edge */
+        }
+
+        .main-title {
+            font-family: var(--font-handwriting);
+            font-size: 3em;
+            color: var(--green-dark);
+            margin: 0 0 10px 0;
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 2px;
+            margin: 0 0 20px 0;
+            /* Positioning key for the rotated text */
+            position: absolute;
+            top: 130px; /* Adjust vertical position */
+            left: -150px; /* Adjust horizontal position */
+            transform: rotate(-90deg); /* Rotate the subtitle text */
+            transform-origin: 0 0;
+            white-space: nowrap; /* Prevent line break */
+        }
+
+        /* Placeholder for the herbal image, styled to look like the image area */
+        .herbal-image-placeholder {
+            width: 300px; 
+            height: 350px;
+            /* Placeholder for a realistic herbal garden image */
+            background-color: #a8cfb4; 
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://via.placeholder.com/300x350/a8cfb4/388e3c?text=Herbal+Garden+Image'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            margin-top: 50px; /* Push down to align with the design */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Sidebar (Circles) --- */
+        .sidebar {
+            position: absolute; /* Position relative to the page-container */
+            left: 40px; /* Adjust horizontal position */
+            top: 150px; /* Adjust vertical position */
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* Space between circles */
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Makes it a circle */
+            border: 3px solid var(--green-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .circle:hover {
+            background-color: var(--green-light);
+        }
+
+        .circle-text {
+            font-size: 0.85em;
+            font-weight: bold;
+            color: var(--green-dark);
+            line-height: 1.2;
+            padding: 0 5px;
+        }
+        /* CSS Ends Here */
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        
+        <div class="content-area">
+            <h1 class="main-title">Virtual Herbal Garden</h1>
+
+            <p class="subtitle">VIRTUAL ROOTS, REAL IMPACT</p>
+            
+            <div class="herbal-image-placeholder">
+                </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="circle">
+                <span class="circle-text">EXPLORE HERBS</span>
+            </div>
+            <div class="circle">
+                <span class="circle-text">FIND MY HERB</span>
+            </div>
+            <div class="circle">
+                <span class="circle-text">KNOW SIDDHA</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

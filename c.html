@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herb Details - Lavender</title>
+    <style>
+        /* Basic CSS for a clean look */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #5d4037; /* Earthy brown */
+            border-bottom: 2px solid #8bc34a; /* Green separator */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .herb-info {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .visuals {
+            text-align: center;
+        }
+
+        .model-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .details p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .details strong {
+            color: #388e3c; /* Darker green for labels */
+        }
+
+        .interactive-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+
+        /* Add to Garden Button */
+        .add-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block; /* Make it a block element to control width/margin */
+            width: 80%;
+            margin: 20px auto; /* Center the button */
+        }
+
+        .add-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Growth Stages Placeholder */
+        .growth-stages {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e8f5e9; /* Light green background */
+            border-radius: 8px;
+        }
+
+        .stage {
+            flex-basis: 30%;
+            padding: 10px;
+            border: 1px dashed #a5d6a7;
+            border-radius: 5px;
+        }
+
+        .stage img {
+            width: 50px; /* Placeholder for stage image/icon */
+            height: 50px;
+            background-color: #c8e6c9;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lavender (Common Name)</h1>
+
+        <div class="herb-info">
+            <div class="visuals">
+                <h2>Visual & Interactive</h2>
+                
+                <div class="model-placeholder">
+                    [Image or Interactive 3D Model Placeholder]
+                    <br> *(Needs JavaScript/External Library)*
+                </div>
+                <button class="add-button" onclick="alert('Lavender Added to Your Garden!')">
+                    + Add to My Garden
+                </button>
+            </div>
+            
+            <div class="details">
+                <h2>Herb Information</h2>
+                
+                <p><strong>Scientific Name:</strong> <em>Lavandula angustifolia</em></p>
+                <p><strong>Uses:</strong> Aromatic, culinary (in moderation), essential oils, potpourri, and calming teas.</p>
+                <p><strong>Ideal Climate:</strong> Prefers **full sun** and **well-drained soil**. Thrives in dry, warm climates (Mediterranean-like). Requires **low to moderate watering**.</p>
+                
+                <h3>Key Benefits</h3>
+                <ul>
+                    <li>**Relaxation & Sleep:** Known for its calming fragrance that aids in stress reduction and promoting sleep.</li>
+                    <li>**Antiseptic Properties:** Used traditionally to clean minor cuts and scrapes.</li>
+                    <li>**Insect Repellent:** Naturally repels moths and other common garden pests.</li>
+                    <li>**Aesthetic Value:** Beautiful purple flowers enhance garden appeal.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="interactive-section">
+            <h2>🌱 Growth Stages Animation</h2>
+            <div class="growth-stages">
+                <div class="stage">
+                    
+
+[Image of Seed]
+
+                    <p><strong>1. Seed</strong></p>
+                    <small>Dormant beginning</small>
+                </div>
+                <div class="stage">
+                    
+
+[Image of Seedling]
+
+                    <p><strong>2. Plant</strong></p>
+                    <small>Active vegetative growth</small>
+                </div>
+                <div class="stage">
+                    
+
+[Image of Flower]
+
+                    <p><strong>3. Flower</strong></p>
+                    <small>Reproductive stage (blooming)</small>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 15px; font-style: italic;">
+                *The actual animation (a CSS keyframe or JavaScript sequence) would replace these static images.*
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
